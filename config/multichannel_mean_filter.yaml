@@ -1,0 +1,4 @@
+elfin_command_filter:
+  name: elfin_command_filter
+  type: MultiChannelMeanFilterDouble
+  params: {number_of_observations: 10}

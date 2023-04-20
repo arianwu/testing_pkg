@@ -1,0 +1,5 @@
+<launch>
+	<remap from="topic" to="/elfin_arm_controller/command"/>
+	<rosparam file="$(find testing_pkg)/config/multichannel_mean_filter.yaml" command="load"/>
+	<node name="mean_filter" pkg="testing_pkg" type="mean_filter" output="screen"/>
+</launch>
